@@ -2,6 +2,7 @@ package CA219;
 
 public class Main {
     public static void main(String[] args) {
+        //WELCOME TO  JAVA....
         //Object
         Circle myCircle = new Circle();
         System.out.println("Radius: " + myCircle.radius);
