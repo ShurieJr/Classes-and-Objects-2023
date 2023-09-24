@@ -17,10 +17,20 @@ public class Main {
 //        Circle myCircle3  = new Circle(10.5);
 //        System.out.println("Radius: " + myCircle3.radius);
 //        System.out.println( myCircle3.getArea());
-
+        //primitive type
+        int x =5;
+        int y = 6;
+        x = y;
+        //object type
         Circle c1 = new Circle();
-        System.out.println(c1.getArea());
+        Circle c2 =  new Circle(6.0);
 
-        Circle.printCircle();
+        System.out.println("c1 radius: " + c1.radius);
+        System.out.println("c2 radius: " + c2.radius);
+
+        c1 = c2;
+        System.out.println("After assigning c1 = c2 ");
+        System.out.println("c1 radius: " + c1.radius);
+        System.out.println("c2 radius: " + c2.radius);
     }
 }
