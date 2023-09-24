@@ -16,7 +16,7 @@ public class stdnt {
         // variables
         int x ;
         String faculty ;
-        System.out.println(x);
-        System.out.println(faculty);
+//        System.out.println(x);
+//        System.out.println(faculty);
     }
 }
