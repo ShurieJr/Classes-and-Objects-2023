@@ -39,7 +39,7 @@ public class Circle {
 ////        System.out.println(Math.pow(2,3));
 ////        Circle.test();
         Circle c1 = new Circle();
-        Circle c2 = new Circle(4.5);
+        Circle c2 = new Circle();
 
         System.out.println(Circle.getNumberOfObjects() + " Object(s)");
         System.out.println(c1.getNumberOfObjects()+ " Object(s)");
