@@ -19,9 +19,8 @@ public class Main {
 //       p1.printPersonInfo();
 //local varaiables
         int x = 9;
-        String name="ali";
-//        System.out.println(x);
-//        System.out.println(name);
-        System.out.println(age);
+
+        System.out.println(++x);
+        System.out.println(x);
     }
 }

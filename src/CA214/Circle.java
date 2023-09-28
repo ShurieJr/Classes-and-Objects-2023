@@ -24,6 +24,18 @@ public class Circle {
         return numberOfObjects;
     }
 
+    void test(){
+        System.out.println(numberOfObjects);
+        getNumberOfObjects();
+        getArea();
+        System.out.println( radius);
+    }
+    static void test2(){
+        System.out.println(numberOfObjects);
+        getNumberOfObjects();
+//        getArea();
+//        System.out.println( radius);
+    }
 
     public static void main(String[] args) {
         Circle c1 = new Circle();
