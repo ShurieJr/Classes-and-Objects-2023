@@ -35,11 +35,17 @@ public class Main {
 //        lamp2.lightOn();
 //        System.out.println("lamp2: " + lamp2.getStatus());
 
-        Car BRADO =  new Car();
+//        Car BRADO =  new Car();
+//
+//        BRADO.setColor("WHITE");
+//        BRADO.setManufacture("BMW");
+//        BRADO.printCarInfo();
+        Student c1 = new Student();
+        PrintCircle(c1);
+    }
 
-        BRADO.setColor("WHITE");
-        BRADO.setManufacture("BMW");
-        BRADO.printCarInfo();
+    public static void PrintCircle(Student obj){
+     obj.printDetails();
     }
 
 

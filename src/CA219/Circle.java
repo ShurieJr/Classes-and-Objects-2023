@@ -41,16 +41,16 @@ public class Circle {
     }
 
     public static void main(String[] args) {
-        Circle c1 = new Circle();
-        Circle c2 = new Circle(3);
+         Circle c1 = new Circle();
+        Circle c2 =new Circle(3);
         Circle c3 = new Circle(5);
 
-        System.out.println("number of objects : " +Circle.numberOfObjects);
+        c1 = c2;
         System.out.println("radius(c1): " + c1.radius);
         System.out.println("radius(c2): " + c2.radius);
-        System.out.println("radius(c3): " + c3.radius);
 
-        System.out.println(Circle.NUMBER);
+
+
 
     }
 
