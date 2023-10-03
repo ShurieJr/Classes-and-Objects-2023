@@ -1,50 +1,63 @@
 package CA2110;
 public class TV {
-    int channel , volume;
+   static int channel, volume;
     boolean status;
-
     TV(){
         channel = 1;
         volume = 1;
         status = false;
     }
-
-    public void setChannel(int channel) {
-        this.channel = channel;
-    }
-
     void turnOn(){
         status = true;
     }
     void turnOff(){
         status = false;
     }
-
-    void channelUp(){
-        if(channel < 120)
-             channel++;
+   static void channelUp(){
+        if(channel <= 120){
+            channel++;
+        }
+        else{
+            System.out.println("channel out of range!");
+        }
     }
-    void channelDown(){
-        if(channel > 1)
+   static void channelDown(){
+        if(channel > 1){
             channel--;
+        }
+        else {
+            System.out.println("out of range!");
+        }
+
     }
 
     void volumeUp(){
-        volume++;
+        if(volume <= 100){
+            volume++;
+        }
+        else{
+            System.out.println("out of rang!");
+        }
     }
     void volumeDown(){
-        volume--;
+        if(volume > 1){
+            volume--;
+        }
+        else{
+            System.out.println("out of range!");
+        }
     }
 
-    //main method
-    public static void main(String[] args) {
-        TV Bile = new TV();
+    public void setChannel(int channel) {
+        this.channel = channel;
+    }
 
-        Bile.turnOn();
-        Bile.setChannel(2);
-        Bile.channelDown();
-        System.out.println("Status: " + Bile.status);
-        System.out.println("Channel: " + Bile.channel);
-        System.out.println("volume: " + Bile.volume);
+    public static void main(String[] args) {
+        TV obj = new TV();
+        channelUp();
+        System.out.println("channel: " + channel);
+        channelDown();
+        System.out.println("channel: " + channel);
+
     }
 }

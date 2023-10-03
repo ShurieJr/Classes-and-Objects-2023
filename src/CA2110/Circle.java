@@ -23,6 +23,9 @@ public class Circle {
 
     //methods
     double getArea(){
+//        getArea();
+//        getNumberOfObjects();
+//        numberOfObjects =3;
         return radius * radius * Math.PI;
     }
 
