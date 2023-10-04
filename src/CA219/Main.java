@@ -18,19 +18,30 @@ public class Main {
 //        System.out.println("Radius: " + myCircle3.radius);
 //        System.out.println( myCircle3.getArea());
         //primitive type
-        int x =5;
-        int y = 6;
-        x = y;
-        //object type
-        Circle c1 = new Circle();
-        Circle c2 =  new Circle(6.0);
+//        int x =5;
+//        int y = 6;
+//        x = y;
+//        //object type
+//        Circle c1 = new Circle();
+//        Circle c2 =  new Circle(6.0);
+//
+//        System.out.println("c1 radius: " + c1.radius);
+//        System.out.println("c2 radius: " + c2.radius);
+//
+//        c1 = c2;
+//        System.out.println("After assigning c1 = c2 ");
+//        System.out.println("c1 radius: " + c1.radius);
+//        System.out.println("c2 radius: " + c2.radius);
 
-        System.out.println("c1 radius: " + c1.radius);
-        System.out.println("c2 radius: " + c2.radius);
+        University obj = new University();
+        University obj2 = new University("jimcaale" , "kaxda");
+     printUniversity(obj2);
 
-        c1 = c2;
-        System.out.println("After assigning c1 = c2 ");
-        System.out.println("c1 radius: " + c1.radius);
-        System.out.println("c2 radius: " + c2.radius);
+    }
+
+    static void printUniversity(University x) // reference type
+    {
+        System.out.println(x.year);
+        System.out.println(x.name);
     }
 }
