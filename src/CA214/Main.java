@@ -1,6 +1,5 @@
 package CA214;
 public class Main {
-   static int age;  //global varaible
     public static void main(String[] args) {
 //        //object  --- Circle
 ////        Circle myCircle = new Circle();
@@ -18,9 +17,13 @@ public class Main {
 //
 //       p1.printPersonInfo();
 //local varaiables
-        int x = 9;
+        Circle obj1 = new Circle();
+        Circle obj2 = new Circle(5);
+        printCircle(obj1);
+        printCircle(obj2);
+    }
 
-        System.out.println(++x);
-        System.out.println(x);
+  public  static void printCircle(Circle obj){
+        System.out.println(obj.radius);
     }
 }

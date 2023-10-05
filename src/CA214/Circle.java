@@ -6,10 +6,12 @@ public class Circle {
    static int numberOfObjects; //static variable
     //constructors
     Circle(){
-        radius = 1.0;
-        numberOfObjects++;
+        this(1.0 );
+//       radius = 1.0;
+//        numberOfObjects++;
+
     }
-    Circle(double value){
+    Circle(double value ){
         radius = value;
         numberOfObjects++;
     }
