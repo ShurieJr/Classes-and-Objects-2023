@@ -31,7 +31,7 @@ public class Revervser {
         String reversed = "";
         while( !stack.isEmpty()){
             Character out = stack.pop();
-            if(!stack.contains(out))
+
                 reversed += out;
         }
         return reversed;
