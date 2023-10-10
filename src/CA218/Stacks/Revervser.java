@@ -5,7 +5,7 @@ import java.util.Stack;
 public class Revervser {
 
     public static void main(String[] args) {
-        String input = "SOMALIA MOGADISHU";
+        String input = "MMKKLL";
         String result = reverse(input);
         System.out.println("String reversed: " + result);
 
@@ -14,7 +14,8 @@ public class Revervser {
     public static String reverseBuffer(String input){
         Stack<Character> s1 = new Stack<>();
         for(char letter: input.toCharArray() ){
-            s1.push(letter);
+            if(!s1.contains(letter))
+                s1.push(letter);
         }
         StringBuffer reversed = new StringBuffer();
         while(!s1.isEmpty()){
@@ -26,12 +27,13 @@ public class Revervser {
     Stack<Character> stack = new Stack<>();
     //1 . push elements
         for(int i =0; i<input.length(); i++){
-            stack.push(input.charAt(i));
+            //if(!stack.contains(input.charAt(i)))
+                stack.push(input.charAt(i));
         }
         String reversed = "";
         while( !stack.isEmpty()){
             Character out = stack.pop();
-
+            if(!reversed.contains(out.toString()))
                 reversed += out;
         }
         return reversed;
