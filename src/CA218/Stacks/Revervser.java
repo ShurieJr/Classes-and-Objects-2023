@@ -10,6 +10,9 @@ public class Revervser {
         System.out.println("String reversed: " + result);
 
     }
+  //Homework:
+    //1. find Min and max element in a stack
+    //2. find the frequency  of an element in a stack
 
     public static String reverseBuffer(String input){
         Stack<Character> s1 = new Stack<>();
