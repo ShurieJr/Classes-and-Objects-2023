@@ -1,5 +1,6 @@
 package CA218.Stacks;
 
+import java.util.Iterator;
 import java.util.Stack;
 
 public class StacksDemo {
@@ -17,5 +18,9 @@ public class StacksDemo {
         System.out.println("removed element: " + s1.pop());
         System.out.println("stack elements: " + s1);
         System.out.println("Isempty: " + s1.isEmpty());
+        Iterator<Integer> iterator = s1.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next() + " ");
+        }
     }
 }

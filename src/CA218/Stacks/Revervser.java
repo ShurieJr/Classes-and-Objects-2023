@@ -30,7 +30,9 @@ public class Revervser {
         }
         String reversed = "";
         while( !stack.isEmpty()){
-            reversed += stack.pop();
+            Character out = stack.pop();
+            if(!stack.contains(out))
+                reversed += out;
         }
         return reversed;
     }
