@@ -9,7 +9,9 @@ public class Reverser {
         System.out.println(reverse(text));
 
     }
-
+    //Homework 219:
+    //1. find Min and max element in a stack
+    //2. find the frequency  of an element in a stack
     public static String reverse(String input){
         Stack<Character> stack = new Stack<>();
         //push letters into the stack
